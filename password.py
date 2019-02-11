@@ -69,4 +69,4 @@ class User:
     @classmethod
     def copy_email(cls,user_name):
         account_found = User.find_by_user_name(user_name)
-        pyperclip.copy(account_found.email)             
+        pyperclip.copy(account_found.email)              
