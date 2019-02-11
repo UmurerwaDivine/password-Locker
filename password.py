@@ -1,9 +1,9 @@
-class Password:
+class User:
     """
     Class that generates new instances of accounts.
     """
 
-    password_list = [] # Empty contact list
+    account_list = [] # Empty contact list
 
     def __init__(self,username,email,password):
 
@@ -12,3 +12,10 @@ class Password:
         self.username = username
         self.email = email
         self.password = password
+
+    def create_account(username,email,password):
+    '''
+    Function to create a new account
+    '''
+    new_account = User(username,email,password)
+    return new_account
