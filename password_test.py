@@ -98,7 +98,7 @@ class TestUser(unittest.TestCase):
         '''
 
         self.new_account.save_account()
-        User.copy_email("di@gmail.com")
+        User.copy_email("Test")
 
         self.assertEqual(self.new_account.email,pyperclip.paste())   
 if __name__ == '__main__':
