@@ -1,21 +1,13 @@
 class User:
     """
-    Class that generates new instances of accounts.
+    Class that generates new instances of contacts
     """
+    account_list = []
 
-    account_list = [] # Empty contact list
+    def __init__(self,user_name,email,password):
 
-    def __init__(self,username,email,password):
+        # docstring removed for simplicity
 
-      # docstring removed for simplicity
-
-        self.username = username
+        self.user_name = user_name
         self.email = email
         self.password = password
-
-    def create_account(username,email,password):
-    '''
-    Function to create a new account
-    '''
-    new_account = User(username,email,password)
-    return new_account
