@@ -32,11 +32,11 @@ def display_accounts():
     Function that returns all the saved account
     '''
     return User.display_accounts()
-def delete_account():
-    '''
-    Function that delete the saved account
-    '''
-    return User.delete_account()  
+# def delete_account():
+#     '''
+#     Function that delete the saved account
+#     '''
+#     return User.delete_account()  
 def copy_email():
     # account_found = User.find_by_user_name(user_name)
     # pyperclip.copy(account_found.email)  
@@ -74,7 +74,7 @@ def main():
                          save_accounts(create_account(user_name,email,password)) # create and save new contact.
                          print ('\n')
                          print(f"New account {user_name} {email} created")
-                         print(pyperclip.paste())
+                        #  print(pyperclip.copy(copy_email))
                          print ('\n')
 
              elif short_code == 'dc':   
@@ -107,14 +107,14 @@ def main():
                                 print(f"password.......{search_account.password}")
                        else:
                                 print("That account does not exist")
-             elif short_code == 'de':
-                       if delete_account():
-                           for account in delete_account():
-                                print("delete this account:"f"{search_account.user_name} {search_account.email}")
-                                print('\n')
-                       else:
-                                print('\n')
-                                print(f"{search_account.user_name}""the account is deleted")             
+        #      elif short_code == 'de':
+        #                if delete_account():
+        #                    for account in delete_account():
+        #                         print("delete this account:"f"{search_account.user_name} {search_account.email}")
+        #                         print('\n')
+        #                else:
+        #                         print('\n')
+        #                         print(f"{search_account.user_name}""the account is deleted")             
              elif short_code == 'ex':
                          print("Bye .......")
                          break

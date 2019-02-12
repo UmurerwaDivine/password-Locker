@@ -1,7 +1,7 @@
 import pyperclip
 class User:
     """
-    Class that generates new instances of contacts
+    Class that generates new instances of accounts
     """
     account_list = []
 
@@ -17,7 +17,7 @@ class User:
     def save_account(self):
 
         '''
-        save_account method saves contact objects into account_list
+        save_account method saves d objects into account_list
         '''
 
         User.account_list.append(self)
@@ -26,7 +26,7 @@ class User:
     def delete_account(self):
 
         '''
-        delete_account method deletes a saved contact from the contact_list
+        delete_account method deletes a saved account from the account_list
         '''
 
         User.account_list.remove(self)
@@ -34,12 +34,12 @@ class User:
 
     def find_by_user_name(cls,user_name):
         '''
-        Method that takes in a number and returns a contact that matches that number.
+        Method that takes in a number and returns a account that matches that username.
 
         Args:
-            number: Phone number to search for
+            username: user to search for
         Returns :
-            Contact of person that matches the number.
+            account of person that matches the username.
         '''
 
         for account in cls.account_list:
@@ -48,11 +48,11 @@ class User:
     @classmethod
     def account_exist(cls,user_name):
         '''
-        Method that checks if a contact exists from the contact list.
+        Method that checks if a account exists from the account list.
         Args:
-            number: Phone number to search if it exists
+            username: username to search if it exists
         Returns :
-            Boolean: True or false depending if the contact exists
+            Boolean: True or false depending if the account exists
         '''
         for account in cls.account_list:
             if account.user_name == user_name:
@@ -62,7 +62,7 @@ class User:
     @classmethod
     def display_accounts(cls):
         '''
-        method that returns the contact list
+        method that returns the account list
         '''
         return cls.account_list 
     # @classmethod

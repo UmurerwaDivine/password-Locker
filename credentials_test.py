@@ -3,7 +3,7 @@ from credentials import Credentials
 
 class TestCredentials(unittest.TestCase):
     '''
-    Test class that defines test cases for the contact class behaviours.
+    Test class that defines test cases for the account class behaviours.
 
     Args:
         unittest.TestCase: TestCase class that helps in creating test cases
@@ -12,4 +12,4 @@ class TestCredentials(unittest.TestCase):
         '''
         Set up method to run before each test cases.
         '''
-        self.new_account = Credentials("din","din@gmail.com","on1") # create contact object
+        self.new_account = Credentials("din","din@gmail.com","on1") # create account object
