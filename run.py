@@ -69,7 +69,7 @@ def main():
                          print(f"New account {user_name} {email} created")
                          print ('\n')
 
-             elif short_code == 'dc': 
+             elif short_code == 'dc':  
 
                      if display_accounts():
                               print("Here is a list of all your accounts")
