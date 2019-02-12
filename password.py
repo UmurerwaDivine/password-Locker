@@ -1,26 +1,26 @@
 import pyperclip
 class User:
-    # """
-    # Class that generates new instances of contacts
-    # """
+    """
+    Class that generates new instances of contacts
+    """
     account_list = []
 
-    # def __init__(self,user_name,email,password):
+    def __init__(self,user_name,email,password):
         
 
-    #     # docstring removed for simplicity
+        # docstring removed for simplicity
 
-    #     self.user_name = user_name
-    #     self.email = email
-    #     self.password = password
+        self.user_name = user_name
+        self.email = email
+        self.password = password
 
-    # def save_account(self):
+    def save_account(self):
 
-    #     '''
-    #     save_account method saves contact objects into account_list
-    #     '''
+        '''
+        save_account method saves contact objects into account_list
+        '''
 
-    #     User.account_list.append(self)
+        User.account_list.append(self)
         
         
     def delete_account(self):
@@ -73,7 +73,7 @@ class User:
     #          return True
     #          return False
 
-    # @classmethod
-    # def copy_email(cls,user_name):
-    #     account_found = User.find_by_user_name(user_name)
-    #     pyperclip.copy(account_found.email)             
+    @classmethod
+    def copy_email(cls,user_name):
+        account_found = User.find_by_user_name(user_name)
+        pyperclip.copy(account_found.email)             

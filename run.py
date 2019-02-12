@@ -1,5 +1,6 @@
 #!/usr/bin/env python3.6
 from password import User
+import pyperclip
 def create_account(user_name,email,password):
     '''
     Function to create a new account
@@ -35,11 +36,17 @@ def delete_account():
     '''
     Function that delete the saved account
     '''
-    return User.delete_account()   
-
+    return User.delete_account()  
+def copy_email():
+    # account_found = User.find_by_user_name(user_name)
+    # pyperclip.copy(account_found.email)  
+    return User.copy_email
 def main():
     print("Hello Welcome to your account list. What is your name?")
     user_name = input()
+    print("Hello Welcome to your account list. What is your password?")
+    password = input()
+    
 
     print(f"Hello {user_name}. what would you like to do?")
     print('\n')
@@ -67,6 +74,7 @@ def main():
                          save_accounts(create_account(user_name,email,password)) # create and save new contact.
                          print ('\n')
                          print(f"New account {user_name} {email} created")
+                         print(pyperclip.paste())
                          print ('\n')
 
              elif short_code == 'dc':   
@@ -112,6 +120,7 @@ def main():
                          break
              else: 
                          print("I really didn't get that. Please use the short codes")
+                                     
 if __name__ == '__main__':
 
  main()
