@@ -89,7 +89,7 @@ class TestUser(unittest.TestCase):
     # def test_display_all_accounts(self):  
     #     '''
     #     method that returns a list of all contacts saved
-    #     '''
+    #     ''' 
  
     #     self.assertEqual(User.display_accounts(),User.account_list)
     # # def test_copy_email(self):
