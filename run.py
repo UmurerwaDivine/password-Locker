@@ -110,7 +110,7 @@ def main():
              elif short_code == 'ex':
                          print("Bye .......")
                          break
-             else:
+             else: 
                          print("I really didn't get that. Please use the short codes")
 if __name__ == '__main__':
 
