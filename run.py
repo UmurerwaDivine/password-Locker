@@ -31,6 +31,12 @@ def display_accounts():
     Function that returns all the saved contacts
     '''
     return User.display_accounts()
+def delete_account():
+    '''
+    Function that delete the saved account
+    '''
+    return User.delete_account()   
+
 def main():
     print("Hello Welcome to your account list. What is your name?")
     user_name = input()
@@ -39,7 +45,7 @@ def main():
     print('\n')
 
     while True:
-             print("Use these short codes : cc - create a new account, dc - display account, fc -find an account, ex -exit the account list ")
+             print("Use these short codes : cc - create a new account, dc - display account, fc -find an account, ex -exit the account list, de -delete account ")
 
              short_code = input()
 
@@ -93,7 +99,14 @@ def main():
                                 print(f"password.......{search_account.password}")
                        else:
                                 print("That account does not exist")
-
+             elif short_code == 'de':
+                       if delete_account():
+                           for account in delete_account():
+                                print("delete this account:"f"{search_account.user_name} {search_account.email}")
+                                print('\n')
+                       else:
+                                print('\n')
+                                print(f"{search_account.user_name}""the account is deleted")             
              elif short_code == 'ex':
                          print("Bye .......")
                          break

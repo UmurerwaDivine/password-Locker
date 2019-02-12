@@ -3,12 +3,12 @@ class Credentials:
 
     account_list = []
 
-    def __init__(self,account_name,email,password):
+    def __init__(self,user_name,email,password):
         
 
         # docstring removed for simplicity
 
-        self.account_name = account_name
+        self.user_name = user_name
         self.email = email
         self.password = password
     def save_account(self):
