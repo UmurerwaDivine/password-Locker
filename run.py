@@ -48,7 +48,7 @@ def main():
              print("Use these short codes : cc - create a new account, dc - display account, fc -find an account, ex -exit the account list, de -delete account ")
 
              short_code = input()
-
+ 
              if short_code == 'cc':
                          print("New Account")
                          print("-"*10)
