@@ -18,7 +18,7 @@ python
                        
 ### Contact Information
 ```
-divinekagame@gmail.com
+divinekagame@gmail.com 
 ```
 ### Link to live site on Github
 ```
