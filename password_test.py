@@ -86,7 +86,7 @@ class TestUser(unittest.TestCase):
 
     #     self.assertTrue(account_exists)
 
-    # def test_display_all_accounts(self): 
+    # def test_display_all_accounts(self):  
     #     '''
     #     method that returns a list of all contacts saved
     #     '''
