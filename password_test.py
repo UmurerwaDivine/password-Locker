@@ -14,7 +14,7 @@ class TestUser(unittest.TestCase):
         '''
         Set up method to run before each test cases.
         '''
-        self.new_account = User("din","din@gmail.com","on1") # create account account
+        self.new_account = User("din","din@gmail.com","on1") # create new account
 
     def test_init(self):
         '''

@@ -32,11 +32,11 @@ def display_accounts():
     Function that returns all the saved account
     '''
     return User.display_accounts()
-# def delete_account():
-#     '''
-#     Function that delete the saved account
-#     '''
-#     return User.delete_account()  
+def delete_account():
+    '''
+    Function that delete the saved account
+    '''
+    return User.delete_account()  
 def copy_email():
     # account_found = User.find_by_user_name(user_name)
     # pyperclip.copy(account_found.email)  
@@ -107,14 +107,19 @@ def main():
                                 print(f"password.......{search_account.password}")
                        else:
                                 print("That account does not exist")
-        #      elif short_code == 'de':
-        #                if delete_account():
-        #                    for account in delete_account():
-        #                         print("delete this account:"f"{search_account.user_name} {search_account.email}")
-        #                         print('\n')
-        #                else:
-        #                         print('\n')
-        #                         print(f"{search_account.user_name}""the account is deleted")             
+             elif short_code == 'de':
+                     
+                       print("Enter the user_name you want to delete")
+
+                       search_user_name = input()
+
+                       if check_existing_accounts(search_user_name):
+                                search_account = find_user_name(search_user_name)
+
+
+                                print("delete the username account")  
+                       else :
+                                print("the username doesn't exist")                
              elif short_code == 'ex':
                          print("Bye .......")
                          break
