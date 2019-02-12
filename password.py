@@ -5,28 +5,28 @@ class User:
     # """
     account_list = []
 
-    def __init__(self,user_name,email,password):
+    # def __init__(self,user_name,email,password):
         
 
-        # docstring removed for simplicity
+    #     # docstring removed for simplicity
 
-        self.user_name = user_name
-        self.email = email
-        self.password = password
+    #     self.user_name = user_name
+    #     self.email = email
+    #     self.password = password
 
-    def save_account(self):
+    # def save_account(self):
 
-        '''
-        save_contact method saves contact objects into contact_list
-        '''
+    #     '''
+    #     save_account method saves contact objects into account_list
+    #     '''
 
-        User.account_list.append(self)
+    #     User.account_list.append(self)
         
         
     def delete_account(self):
 
         '''
-        delete_contact method deletes a saved contact from the contact_list
+        delete_account method deletes a saved contact from the contact_list
         '''
 
         User.account_list.remove(self)
@@ -64,7 +64,14 @@ class User:
         '''
         method that returns the contact list
         '''
-        return cls.account_list   
+        return cls.account_list 
+    # @classmethod
+    # def delete_account(cls,self):
+    #  for account_exist in cls.account_list: 
+    #      if account_exist.user_name==user_name: 
+
+    #          return True
+    #          return False
 
     # @classmethod
     # def copy_email(cls,user_name):

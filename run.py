@@ -2,33 +2,33 @@
 from password import User
 def create_account(user_name,email,password):
     '''
-    Function to create a new contact
+    Function to create a new account
     '''
     new_account = User(user_name,email,password)
     return new_account
 def save_accounts(account):
     '''
-    Function to save contact
+    Function to save accountt
     '''
     account.save_account()
 def del_account(account):
     '''
-    Function to delete a contact
+    Function to delete an account
     '''
     account.delete_account()
 def find_user_name(user_name):
     '''
-    Function that finds a contact by number and returns the contact
+    Function that finds an account by number and returns the account
     '''
     return User.find_by_user_name(user_name)
 def check_existing_accounts(user_name):
     '''
-    Function that check if a contact exists with that number and return a Boolean
+    Function that check if an account exists with that number and return a Boolean
     '''
     return User.account_exist(user_name)
 def display_accounts():
     '''
-    Function that returns all the saved contacts
+    Function that returns all the saved account
     '''
     return User.display_accounts()
 def delete_account():
