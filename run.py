@@ -32,7 +32,7 @@ def display_accounts():
     Function that returns all the saved account
     '''
     return User.display_accounts()
-def delete_account():
+def del_account():
     '''
     Function that delete the saved account
     '''
@@ -115,6 +115,7 @@ def main():
 
                        if check_existing_accounts(search_user_name):
                                 search_account = find_user_name(search_user_name)
+                                del_account(search_user_name)
 
 
                                 print("delete the username account")  
