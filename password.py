@@ -65,13 +65,13 @@ class User:
         method that returns the account list
         '''
         return cls.account_list 
-    # @classmethod
-    # def delete_account(cls,self):
-    #  for account_exist in cls.account_list: 
-    #      if account_exist.user_name==user_name: 
+    @classmethod
+    def delete_account(cls,user_name):
+     for account_exist in cls.account_list: 
+         if account_exist.user_name==user_name: 
 
-    #          return True
-    #          return False
+             return True
+             return False
 
     @classmethod
     def copy_email(cls,user_name):
